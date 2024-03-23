@@ -30,7 +30,7 @@ steps:
       [
         "./configure_client.js",
         "../client/src/environments/environment.prod.params.ts",
-      	'API_URL=https://us-central1-woolaroo-experiment-417200.cloudfunctions.net/',
+      'API_URL=https://us-central1-woolaroo-experiment-417200.cloudfunctions.net/',
         "${_APP_URL}",
         'BUCKET_LOCATION=us',
         'BUCKET_NAME=woolaroo_new',
