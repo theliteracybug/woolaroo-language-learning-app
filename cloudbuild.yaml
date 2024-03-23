@@ -84,6 +84,3 @@ steps:
       - deploy
       - dispatch.yaml
     dir: "server"
-
-    options:
-logging: CLOUD_LOGGING_ONLY
