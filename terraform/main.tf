@@ -1,3 +1,12 @@
+terraform {
+  required_providers {
+    google = {
+      source = "hashicorp/google"
+      version = "4.59.0"
+    }
+  }
+}
+
 variable "google_project" {}
 variable "google_credentials" {
     default = ""
@@ -20,7 +29,7 @@ provider "google" {
   project = var.google_project
 }
 
-resource "google_storage_bucket" "app-store" {
+resource "google_storage_bucket" "woolaroo_new" {
   name = var.bucket_name
   location = var.bucket_location
   storage_class = "MULTI_REGIONAL"
@@ -32,8 +41,8 @@ resource "google_storage_bucket" "app-store" {
   }
 }
 
-resource "google_storage_bucket_iam_member" "app-store-acl" {
-  bucket = "${google_storage_bucket.app-store.name}"
+resource "google_storage_bucket_iam_member" "woolaroo_new-acl" {
+  bucket = "${google_storage_bucket.woolaroo_new.name}"
   role = "roles/storage.objectViewer"
   member = "allUsers"
 }
