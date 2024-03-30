@@ -1,6 +1,11 @@
 # cloudbuild.yaml
 
+apiVersion: cloudbuild.googleapis.com/v2
+kind: Build
+app_cache_ttl: 2d
+
 timeout: 1200s
+
 options:
   logging: CLOUD_LOGGING_ONLY
 
