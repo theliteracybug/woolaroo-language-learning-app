@@ -4,10 +4,6 @@ timeout: 1200s
 options:
   logging: CLOUD_LOGGING_ONLY
 
-annotations:
-  cloudbuild.googleapis.com/version: "v2"
-
-app_cache_ttl: 2d
 steps:
   # Client
   - id: "install_client_dependencies"
