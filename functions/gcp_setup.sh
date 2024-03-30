@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Google project ID - default to current project ID
-PROJECT_ID=`gcloud config get-value project`
+PROJECT_ID=woolaroo-experiment-417200
 
 # Enable required APIs
 gcloud services enable cloudfunctions.googleapis.com

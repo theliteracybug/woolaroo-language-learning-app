@@ -9,7 +9,7 @@ const {google} = require('googleapis');
 const validation = require('./validation');
 
 ffmpeg.setFfmpegPath(ffmpegPath);
-const visionClient = new vision.v1p3beta1.ImageAnnotatorClient();
+const visionClient = new vision.v1p4beta1.ImageAnnotatorClient();
 const datastore = new Datastore();
 
 async function getGoogleAPIAuthentication() {
@@ -35,6 +35,14 @@ async function writeFileAsync(path, buffer) {
         });
     });
 }
+
+async function quickstart() {
+    // Imports the Google Cloud client library
+    const vision = require('@google-cloud/vision');
+  
+    // Creates a client
+    const client = new vision.ImageAnnotatorClient();
+  }
 
 function addSecurityHeaders(res) {
     res.set('X-Frame-Options', 'SAMEORIGIN');
