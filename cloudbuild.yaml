@@ -1,7 +1,6 @@
 timeout: 1200s
 options:
   logging: CLOUD_LOGGING_ONLY
-app_cache_ttl: 2d
 steps:
   # Client
   - id: "install_client_dependencies"
@@ -85,3 +84,4 @@ steps:
       - deploy
       - dispatch.yaml
     dir: "server"
+    app_cache_ttl: 2d
