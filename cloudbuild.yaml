@@ -1,6 +1,5 @@
 timeout: 1200s
 options:
-  machineType: 'E2-standard-16'
   logging: CLOUD_LOGGING_ONLY
 steps:
   # Client
