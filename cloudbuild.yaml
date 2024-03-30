@@ -1,6 +1,6 @@
 timeout: 1200s
 options:
-  machineType: "N1_HIGHCPU_8"
+  machineType: "e2-standard-4"
   logging: CLOUD_LOGGING_ONLY
 steps:
   # Client
