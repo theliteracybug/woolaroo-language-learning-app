@@ -18,7 +18,7 @@ For posterity, an example configuration of a source control based trigger is pro
 	* `_TERRAFORM_BUCKET_NAME` e.g. 'barnard-myinstance-terraform'
 	* `_THEME` e.g. 'red'
 
-## Cloud Build deployment
+## Cloud Build deployment V1
 
 * tag commit with `prod-*` tag
 * push commit and tags with `git push origin master --tags`
