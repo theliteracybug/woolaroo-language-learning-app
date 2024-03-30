@@ -63,7 +63,7 @@ steps:
       - ${_PROD_URL}
       - ${_STAGING_URL}
     dir: "./deploy"
-
+    options.logging: CLOUD_LOGGING_ONLY
   - id: "deploy_server"
     waitFor:
       - "build_client"
