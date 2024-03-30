@@ -1,8 +1,5 @@
 # cloudbuild.yaml
 
-kind: Build
-app_cache_ttl: 2d
-
 timeout: 1200s
 
 options:
